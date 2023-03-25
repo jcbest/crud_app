@@ -21,18 +21,18 @@
             </div>
 
             <!--Form Handling-->
-            <form  method="POST" id="update-user">
+            <form  method="POST" id="update_user">
                 <div class="new_user">
-                    <div class="form_group">
+                    <div class="form-group">
                         <label for="name" class="text-light">Name</label>
                         <input type="hidden" name="id" value="">
-                        <input type="text" name="name" value="" placeholder="Maerk Stonie">
+                        <input type="text" name="name" value="<%-user.name%>" placeholder="Maerk Stonie">
                      </div>
-                     <div class="form_group">
+                     <div class="form-group">
                         <label for="email" class="text-light">Email</label>
-                        <input type="text" name="email" value="" placeholder="example@gmail.com">
+                        <input type="text" name="email" value="<%= user.email %>" placeholder="example@gmail.com">
                      </div>
-                     <div class="form_group">
+                     <div class="form-group">
                         <label for="gender" class="text-light">Gender</label>
                             <div class="radio inline">
                                 <input type="radio" id="radio-2" name="gender" value="Male">
@@ -43,7 +43,7 @@
                                 <label for="radio-3" class="text-light">Female</label>
                             </div>
                      </div>
-                     <div class="form_group">
+                     <div class="form-group">
                         <label for="status" class="text-light">Status</label>
                             <div class="radio inline">
                                 <input type="radio" id="radio-4" name="status" value="Action">
